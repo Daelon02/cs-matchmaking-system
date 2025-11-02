@@ -1,0 +1,16 @@
+[package]
+name = "common"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[dependencies]
+fern = "0.7.1"
+log = { workspace = true }
+colored = "3.0.0"
+chrono = { workspace = true }
+anyhow = { workspace = true }
+structopt = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

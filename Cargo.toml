@@ -1,0 +1,29 @@
+[workspace]
+members = [
+    "common",
+    "services/*",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+authors = ["Daelon02"]
+repository = "https://github.com/Daelon02/cs-matchmaking-system"
+
+[workspace.dependencies]
+thiserror = "2.0.17"
+diesel = { version = "2.3.3", features = ["postgres", "serde_json"] }
+diesel-async = { version = "0.7.3", features = ["postgres", "bb8"] }
+chrono = { version = "0.4.42", features = ["serde"] }
+bb8 = { version = "0.9.0" }
+tokio = { version = "1.48.0", features = ["full"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+actix = "0.13.5"
+actix-web = "4.11.0"
+utoipa = { version = "5.4.0", features = ["macros", "chrono", "actix_extras"] }
+log = "0.4.28"
+common = { path = "./common" }
+anyhow = "1.0.100"
+structopt = { version = "0.3.26", features = ["yaml"] }
