@@ -7,6 +7,6 @@ CREATE TABLE players (
     region TEXT,
     nickname TEXT,
     first_ip inet NOT NULL,
-    created timestampz DEFAULT now(),
-    updated timestampz
+    created timestamptz DEFAULT now(),
+    updated timestamptz
 );

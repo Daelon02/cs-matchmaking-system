@@ -13,7 +13,7 @@ repository = "https://github.com/Daelon02/cs-matchmaking-system"
 
 [workspace.dependencies]
 thiserror = "2.0.17"
-diesel = { version = "2.3.3", features = ["postgres", "serde_json"] }
+diesel = { version = "2.3.3", features = ["postgres", "serde_json", "without-deprecated", "ipnet-address", "chrono", "uuid", "network-address"] }
 diesel-async = { version = "0.7.3", features = ["postgres", "bb8"] }
 chrono = { version = "0.4.42", features = ["serde"] }
 bb8 = { version = "0.9.0" }
@@ -27,3 +27,6 @@ log = "0.4.28"
 common = { path = "./common" }
 anyhow = "1.0.100"
 structopt = { version = "0.3.26", features = ["yaml"] }
+ipnetwork = { version = "0.21.1", features = ["default", "serde"] }
+uuid = { version = "1.18.1", features = ["v4"] }
+diesel-derive-enum = { version = "3.0.0-beta.1", features = ["postgres"] }

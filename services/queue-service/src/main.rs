@@ -1,8 +1,8 @@
-use structopt::StructOpt;
+use crate::config::command_line::Opt;
 use crate::errors::AppResult;
 use common::log::init_logging;
 use common::log::log_config::LoggingOpts;
-use crate::config::command_line::Opt;
+use structopt::StructOpt;
 
 mod api;
 mod config;

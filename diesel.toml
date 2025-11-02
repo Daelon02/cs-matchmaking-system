@@ -2,7 +2,8 @@
 # see https://diesel.rs/guides/configuring-diesel-cli
 
 [print_schema]
-file = "/common/src/schema.rs"
+file = "common/src/schema.rs"
+custom_type_derives = ["Debug", "Clone"]
 
 [migrations_directory]
 dir = "common/migrations"

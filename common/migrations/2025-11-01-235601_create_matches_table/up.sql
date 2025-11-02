@@ -1,7 +1,7 @@
 -- Your SQL goes here
 CREATE TABLE matches (
     id UUID PRIMARY KEY,
-    queue_id UUID FOREIGN KEY queues(id),
+    queue_id UUID,
     mode mode NOT NULL,
     region text NOT NULL,
     team_size smallint NOT NULL,
@@ -13,5 +13,6 @@ CREATE TABLE matches (
     server_ip inet NULL,
     server_port int NULL,
     server_token text NULL,
-    server_ttl timestamptz NULL
+    server_ttl timestamptz NULL,
+    FOREIGN KEY (queue_id) REFERENCES queues(id)
 );

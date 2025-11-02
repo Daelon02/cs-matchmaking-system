@@ -1,15 +1,15 @@
-use structopt::StructOpt;
+use crate::config::command_line::Opt;
 use crate::errors::AppResult;
 use common::log::init_logging;
-use crate::config::command_line::Opt;
+use structopt::StructOpt;
 
 mod api;
 mod config;
 mod errors;
+mod routes;
 mod services;
 mod state;
 mod utils;
-mod routes;
 
 #[tokio::main]
 async fn main() -> AppResult<()> {

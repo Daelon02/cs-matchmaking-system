@@ -1,9 +1,9 @@
+use crate::log::log_config::LoggingOpts;
 use colored::Colorize;
 use log::{Level, LevelFilter};
 use std::collections::HashMap;
 use std::str::FromStr;
 use std::thread::ThreadId;
-use crate::log::log_config::LoggingOpts;
 
 mod consts;
 pub mod log_config;
