@@ -251,6 +251,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "auth-service"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "anyhow",
+ "common",
+ "log",
+ "serde",
+ "serde_json",
+ "structopt",
+ "thiserror",
+ "tokio",
+]
+
+[[package]]
 name = "autocfg"
 version = "1.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -911,6 +926,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "34080505efa8e45a4b816c349525ebe327ceaa8559756f0356cba97ef3bf7432"
 
 [[package]]
+name = "matchmaking-service"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "anyhow",
+ "common",
+ "log",
+ "serde",
+ "serde_json",
+ "structopt",
+ "thiserror",
+ "tokio",
+]
+
+[[package]]
 name = "memchr"
 version = "2.7.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -986,6 +1016,21 @@ dependencies = [
  "redox_syscall",
  "smallvec",
  "windows-link",
+]
+
+[[package]]
+name = "party-service"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "anyhow",
+ "common",
+ "log",
+ "serde",
+ "serde_json",
+ "structopt",
+ "thiserror",
+ "tokio",
 ]
 
 [[package]]
@@ -1070,6 +1115,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "queue-service"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "anyhow",
+ "common",
+ "log",
+ "serde",
+ "serde_json",
+ "structopt",
+ "thiserror",
+ "tokio",
+]
+
+[[package]]
 name = "quote"
 version = "1.0.41"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1111,6 +1171,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "99d9a13982dcf210057a8a78572b2217b667c3beacbf3a0d8b454f6f82837d38"
 dependencies = [
  "getrandom",
+]
+
+[[package]]
+name = "rating-service"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "anyhow",
+ "common",
+ "log",
+ "serde",
+ "serde_json",
+ "structopt",
+ "thiserror",
+ "tokio",
 ]
 
 [[package]]
@@ -1156,6 +1231,21 @@ name = "regex-syntax"
 version = "0.8.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7a2d987857b319362043e95f5353c0535c1f58eec5336fdfcf626430af7def58"
+
+[[package]]
+name = "report-service"
+version = "0.1.0"
+dependencies = [
+ "actix-web",
+ "anyhow",
+ "common",
+ "log",
+ "serde",
+ "serde_json",
+ "structopt",
+ "thiserror",
+ "tokio",
+]
 
 [[package]]
 name = "rustversion"
