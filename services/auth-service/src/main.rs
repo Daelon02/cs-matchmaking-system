@@ -1,7 +1,6 @@
 use structopt::StructOpt;
 use crate::errors::AppResult;
 use common::log::init_logging;
-use common::log::log_config::LoggingOpts;
 use crate::config::command_line::Opt;
 
 mod api;
@@ -10,6 +9,7 @@ mod errors;
 mod services;
 mod state;
 mod utils;
+mod routes;
 
 #[tokio::main]
 async fn main() -> AppResult<()> {
